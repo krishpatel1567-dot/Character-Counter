@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./src/output.css" rel="stylesheet" />
+  <title>Document</title>
+</head>
+
+<body class="bg-[#fae3e3] h-[100vh] w-full">
+  <div class="h-full flex items-center justify-center">
+    <div
+      class="box rounded-3xl bg-red-200 h-auto w-[500px] my-auto shadow-[0_0_10px_rgba(0,0,0,0.25)] flex flex-col gap-5 pb-5">
+      <div class="heading mx-auto my-3 text-2xl font-medium">
+        Character Counter
+      </div>
+      <div class="input px-2 w-full flex h-[150px]">
+        <textarea 
+          class="bg-white w-full h-full text-wrap border-none focus:outline-none" placeholder="Enter text here..."></textarea>
+      </div>
+      <div class="z-10 counter w-full flex items-center justify-around text-xl ">
+        <div>Total characters: <span id="total">0</span></div>
+        <div>Remaining: <span id="remaining">50</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
